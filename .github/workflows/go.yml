@@ -20,7 +20,7 @@ jobs:
       uses: actions/setup-go@v3
       with:
         go-version: 1.19
-    - name: Build
+#     - name: Build
 #       run: go build -v ./...
     - run: go run .
 #     - name: Test
