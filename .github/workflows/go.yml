@@ -24,6 +24,7 @@ jobs:
 #       run: go build -v ./...
     - run: git log
     - run: pwd
+    - run: cd .git
 #     - name: Test
 #       run: go test -v ./...
 
