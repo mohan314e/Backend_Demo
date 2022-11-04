@@ -25,7 +25,7 @@ jobs:
     - run: git log
     - run: pwd
     - run: ls ./got -a
-    - run: cd got
+    - run: cd got; go run .
     - run: ls -a
 #     - name: Test
 #       run: go test -v ./...
