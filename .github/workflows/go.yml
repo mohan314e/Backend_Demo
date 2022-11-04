@@ -23,6 +23,7 @@ jobs:
 #     - name: Build
 #       run: go build -v ./...
     - run: git log
+    - run: pwd
 #     - name: Test
 #       run: go test -v ./...
 
