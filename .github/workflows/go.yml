@@ -20,20 +20,20 @@ jobs:
       uses: actions/setup-go@v3
       with:
         go-version: 1.19
-#     - name: Build
-#       run: go build -v ./...
-
+    - name: Build
+      run: go build -v ./...
+    - run: go run .
 #     - name: Test
 #       run: go test -v ./...
 
-  rr:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - run: ls -a; ls .. -a
-#       - run: cd got
-      - run: go get .
-        working-directory: ./got
-      - run: go run .
-        working-directory: ./got
+#   rr:
+#     runs-on: ubuntu-latest
+#     needs: build
+#     steps:
+#       - run: ls -a; ls .. -a
+# #       - run: cd got
+#       - run: go get .
+#         working-directory: ./got
+#       - run: go run .
+#         working-directory: ./got
       
