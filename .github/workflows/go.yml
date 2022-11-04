@@ -24,7 +24,7 @@ jobs:
 #       run: go build -v ./...
     - run: git log
     - run: pwd
-    - run: ls -a
+    - run: ls ./got -a
     - run: cd got
     - run: ls -a
 #     - name: Test
